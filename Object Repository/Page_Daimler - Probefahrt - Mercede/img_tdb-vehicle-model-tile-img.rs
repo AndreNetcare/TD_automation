@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_tdb-vehicle-model-tile-img</name>
+   <tag></tag>
+   <elementGuidId>58b0bc2e-afed-4995-a815-d579f27efa29</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tdb-vehicle-model-tile-img</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>C-Klasse Limousine</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://images-vmds.mercedes-benz.com/images/vmds/mvp/SSPIP62141_MQ6_205042_large.png</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ng-src</name>
+      <type>Main</type>
+      <value>https://images-vmds.mercedes-benz.com/images/vmds/mvp/SSPIP62141_MQ6_205042_large.png</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tdb-vehicle-model-tile-c-class-saloon&quot;)/div[@class=&quot;tdb-vehicle-model-tile-front-tile&quot;]/div[@class=&quot;tdb-vehicle-model-tile-img-container&quot;]/img[@class=&quot;tdb-vehicle-model-tile-img&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_Daimler - Probefahrt - Mercede/iframe_tdb-cont</value>
+   </webElementProperties>
+</WebElementEntity>

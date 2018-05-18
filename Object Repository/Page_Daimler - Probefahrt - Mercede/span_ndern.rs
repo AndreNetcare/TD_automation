@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_ndern</name>
+   <tag></tag>
+   <elementGuidId>31975590-3489-430a-89d9-c8a00eaddf03</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-translate</name>
+      <type>Main</type>
+      <value>TDB_STEPNAVIGATION_CHANGE</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-scope</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ändern</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tdb-step-navigation&quot;)/ul[@class=&quot;tdb-step-navigation-steps ng-scope&quot;]/li[@class=&quot;tdb-step-navigation-step ng-scope tdb-step-navigation-step-done&quot;]/a[@class=&quot;tdb-step-navigation-link&quot;]/div[@class=&quot;tdb-step-navigation-step-text&quot;]/div[@class=&quot;tdb-step-navigation-step-details ng-scope&quot;]/div[@class=&quot;tdb-step-navigation-step-details-change ng-scope&quot;]/span[@class=&quot;ng-scope&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_Daimler - Probefahrt - Mercede/iframe_tdb-cont</value>
+   </webElementProperties>
+</WebElementEntity>
