@@ -110,7 +110,5 @@ WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/span_B'))
 
 WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/button_Weiter'))
 
-WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/div_C-Klasse Limousine'))
-
 WebUI.closeBrowser()
 
