@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_fueltype</description>
-   <name>generic_dropdown_fueltype</name>
+   <description></description>
+   <name>footer_co2</name>
    <tag></tag>
-   <elementGuidId>920126a1-2b66-4b38-8bb1-aca0399a41c7</elementGuidId>
+   <elementGuidId>b4b4de9c-7a1d-4acb-9325-d30830bc089c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+      <value>//span[contains(text(),'[1]')][contains(@class,'legal')]</value>
    </webElementProperties>
 </WebElementEntity>

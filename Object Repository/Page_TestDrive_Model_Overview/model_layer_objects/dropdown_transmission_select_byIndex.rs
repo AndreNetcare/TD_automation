@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_fueltype</description>
-   <name>generic_dropdown_fueltype</name>
+   <description>generic_dropdown_transmission</description>
+   <name>dropdown_transmission_select_byIndex</name>
    <tag></tag>
-   <elementGuidId>920126a1-2b66-4b38-8bb1-aca0399a41c7</elementGuidId>
+   <elementGuidId>2693c7c2-d69d-4184-86e9-0e55aa03536c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+         <value>(//tdb-dropdown-box[contains(@selected-option,'transmission')]/ul/li)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+      <value>(//tdb-dropdown-box[contains(@selected-option,'transmission')]/ul/li)[1]</value>
    </webElementProperties>
 </WebElementEntity>

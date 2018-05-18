@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_fueltype</description>
-   <name>generic_dropdown_fueltype</name>
+   <description></description>
+   <name>generic_energy_label</name>
    <tag></tag>
-   <elementGuidId>920126a1-2b66-4b38-8bb1-aca0399a41c7</elementGuidId>
+   <elementGuidId>06a76193-9b0c-4012-bf75-57b383f388f7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+      <value>//div[contains(@ng-repeat,'carbonFootprint')]//span[contains(@class,'energy-label class')]</value>
    </webElementProperties>
 </WebElementEntity>

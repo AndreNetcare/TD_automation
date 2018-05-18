@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_fueltype</description>
-   <name>generic_dropdown_fueltype</name>
+   <description></description>
+   <name>step4_inactive</name>
    <tag></tag>
-   <elementGuidId>920126a1-2b66-4b38-8bb1-aca0399a41c7</elementGuidId>
+   <elementGuidId>29a57c30-448b-4841-9499-81bf1ee43ce4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//tdb-dropdown-box[contains(@selected-option,'fuelType')]//button</value>
+      <value>//li[contains(@class,'navigation-step-inactive')]/a[@data-ui-sref='summary']</value>
    </webElementProperties>
 </WebElementEntity>
