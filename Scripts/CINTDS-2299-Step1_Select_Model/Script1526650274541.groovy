@@ -50,7 +50,9 @@ WebUI.check(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/ge
 
 WebUI.click(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_next_step_button'))
 
-WebUI.scrollToElement(findTestObject('Page_TestDrive_Model_Overview/change_step1_in_step2'), 0)
+WebUI.delay(15)
+
+WebUI.scrollToPosition(0, 0)
 
 WebUI.click(findTestObject('Page_TestDrive_Model_Overview/change_step1_in_step2'))
 
