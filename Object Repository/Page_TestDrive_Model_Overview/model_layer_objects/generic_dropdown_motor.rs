@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>generic_dropdown_motor</description>
+   <name>generic_dropdown_motor</name>
+   <tag></tag>
+   <elementGuidId>dc80d9fb-96e7-44c2-8ae8-3bdfed049afb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//tdb-dropdown-box[contains(@selected-option,'motorisation')]//button</value>
+   </webElementProperties>
+</WebElementEntity>

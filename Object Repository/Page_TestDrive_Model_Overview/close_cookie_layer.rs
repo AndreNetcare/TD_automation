@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Schlieen</name>
+   <name>close_cookie_layer</name>
    <tag></tag>
    <elementGuidId>7ebc536d-88a3-4059-8bf2-563dbc624139</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

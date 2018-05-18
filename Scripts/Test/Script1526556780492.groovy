@@ -23,7 +23,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://germany.int.publish.oneweb.mercedes-benz.cinteo.de/passengercars/mercedes-benz-cars/test-drive.html#/model')
 
-WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/a_Schlieen'))
+WebUI.click(findTestObject('Page_TestDrive_Model_Overview/close_cookie_layer'))
 
 WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/img_tdb-vehicle-model-tile-img'))
 
