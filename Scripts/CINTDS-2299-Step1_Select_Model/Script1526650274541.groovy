@@ -28,7 +28,7 @@ WebUI.navigateToUrl('https://germany.int.publish.oneweb.mercedes-benz.cinteo.de/
 
 WebUI.waitForPageLoad(15)
 
-WebUI.delay(15)
+WebUI.delay(20)
 
 WebUI.click(findTestObject('Page_TestDrive_Model_Overview/close_cookie_layer'))
 
