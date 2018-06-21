@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>step2_inactive</name>
+   <name>dl-form_submit</name>
    <tag></tag>
-   <elementGuidId>85b4a884-328e-4f62-93bd-d548d91ac720</elementGuidId>
+   <elementGuidId>a3a33ce1-d350-4a8a-bb1a-ad42d49815c4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[contains(@class,'navigation-step-inactive')]/a[@data-ui-sref='dealer']</value>
+      <value>//div[@class='dl-formpanel dl-panel']//button[@type='submit']</value>
    </webElementProperties>
 </WebElementEntity>

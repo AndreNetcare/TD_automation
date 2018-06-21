@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_fueltype</description>
-   <name>dropdown_fueltype_select_byIndex</name>
+   <description></description>
+   <name>Header_MB_logo</name>
    <tag></tag>
-   <elementGuidId>1a331a94-21a7-4a05-9db9-9d00361607a8</elementGuidId>
+   <elementGuidId>cb3e43c2-1526-49b7-9fd9-9708453d9765</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>(//tdb-dropdown-box[contains(@selected-option,'fuelType')]/ul/li)[1]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//tdb-dropdown-box[contains(@selected-option,'fuelType')]/ul/li)[1]</value>
+      <value>//img[@title='Mercedes-Benz Logo']</value>
    </webElementProperties>
 </WebElementEntity>

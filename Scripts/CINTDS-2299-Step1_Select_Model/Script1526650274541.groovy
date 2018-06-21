@@ -36,7 +36,7 @@ WebUI.switchToFrame(findTestObject('Page_TestDrive_Model_Overview/td_contentfram
 
 WebUI.check(findTestObject('Page_TestDrive_Model_Overview/step1_active'))
 
-WebUI.check(findTestObject('Page_TestDrive_Model_Overview/step2_inactive'))
+WebUI.check(findTestObject('Page_TestDrive_Dealer_Locator/step2_active'))
 
 WebUI.check(findTestObject('Page_TestDrive_Model_Overview/step3_inactive'))
 

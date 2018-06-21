@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>step2_inactive</name>
+   <name>generic_dropdown_transmission_disabled</name>
    <tag></tag>
-   <elementGuidId>85b4a884-328e-4f62-93bd-d548d91ac720</elementGuidId>
+   <elementGuidId>8a28f4b2-3276-49e8-9945-b23b88be7b6b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[contains(@class,'navigation-step-inactive')]/a[@data-ui-sref='dealer']</value>
+      <value>(//button[contains(@class,'disabled')])[1]</value>
    </webElementProperties>
 </WebElementEntity>

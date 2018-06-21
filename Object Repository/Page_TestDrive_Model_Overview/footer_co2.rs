@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//span[contains(@class,'section-legal')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'[1]')][contains(@class,'legal')]</value>
+      <value>//span[contains(@class,'section-legal')]</value>
    </webElementProperties>
 </WebElementEntity>

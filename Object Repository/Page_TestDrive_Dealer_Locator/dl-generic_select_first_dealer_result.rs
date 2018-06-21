@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>step2_inactive</name>
+   <name>dl-generic_select_first_dealer_result</name>
    <tag></tag>
-   <elementGuidId>85b4a884-328e-4f62-93bd-d548d91ac720</elementGuidId>
+   <elementGuidId>dfdcb044-c656-482c-a409-0ad9d953a92e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[contains(@class,'navigation-step-inactive')]/a[@data-ui-sref='dealer']</value>
+      <value>(//div[@class='dl-dealer-data'])[1]</value>
    </webElementProperties>
 </WebElementEntity>

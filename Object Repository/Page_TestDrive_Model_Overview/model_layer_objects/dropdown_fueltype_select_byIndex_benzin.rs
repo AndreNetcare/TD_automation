@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>step2_inactive</name>
+   <description>generic_dropdown_fueltype</description>
+   <name>dropdown_fueltype_select_byIndex_benzin</name>
    <tag></tag>
-   <elementGuidId>85b4a884-328e-4f62-93bd-d548d91ac720</elementGuidId>
+   <elementGuidId>1a331a94-21a7-4a05-9db9-9d00361607a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>(//tdb-dropdown-box[contains(@selected-option,'fuelType')]//ul/li)[1]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[contains(@class,'navigation-step-inactive')]/a[@data-ui-sref='dealer']</value>
+      <value>(//tdb-dropdown-box[contains(@selected-option,'fuelType')]//ul/li)[1]</value>
    </webElementProperties>
 </WebElementEntity>

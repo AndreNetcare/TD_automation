@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>CINTDS-2299-Step1_Select_Model</description>
-   <name>CINTDS-2299-Step1_Select_Model_old</name>
-   <tag>RegressionTest</tag>
-   <comment></comment>
-   <testCaseGuid>9e4ced72-b2f6-4586-a55f-c8e8ec9b641d</testCaseGuid>
-</TestCaseEntity>
