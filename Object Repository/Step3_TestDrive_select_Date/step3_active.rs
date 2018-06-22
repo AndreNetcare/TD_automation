@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>step3_active</name>
+   <tag></tag>
+   <elementGuidId>6648ab15-8b22-4086-9c68-8c500c0a8b05</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[contains(@class,'navigation-step-active')]/a[@data-ui-sref='schedule']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//li[contains(@class,'navigation-step-active')]/a[@data-ui-sref='schedule']</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>continue_button_disabled</name>
+   <tag></tag>
+   <elementGuidId>2f123ab1-36dd-4ab5-8115-3fa5307285b4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[contains(@class,'disabled')][@data-ng-click='ctrl.nextStep()']//span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[contains(@class,'disabled')][@data-ng-click='ctrl.nextStep()']//span</value>
+   </webElementProperties>
+</WebElementEntity>

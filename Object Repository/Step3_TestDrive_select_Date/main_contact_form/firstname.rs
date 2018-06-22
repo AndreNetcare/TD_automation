@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_contentframe</name>
+   <name>firstname</name>
    <tag></tag>
-   <elementGuidId>96ab1451-40fd-43f4-82c6-be0d991249ad</elementGuidId>
+   <elementGuidId>42bcfe96-71e9-47aa-bf80-1b7115085a2c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//iframe[@id='tdb-cont']</value>
+      <value>//form[@name='mainContactForm']//input[@type='text'][@name='firstName']</value>
    </webElementProperties>
 </WebElementEntity>

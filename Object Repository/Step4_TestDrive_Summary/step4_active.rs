@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>step4_active</name>
+   <tag></tag>
+   <elementGuidId>ad85e6b6-0772-4247-a124-813264d6c0a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[contains(@class,'navigation-step-active')]/a[@data-ui-sref='summary']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//li[contains(@class,'navigation-step-active')]/a[@data-ui-sref='summary']</value>
+   </webElementProperties>
+</WebElementEntity>

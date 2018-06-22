@@ -23,11 +23,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://germany.int.publish.oneweb.mercedes-benz.cinteo.de/passengercars/mercedes-benz-cars/test-drive.html#/model')
 
-WebUI.click(findTestObject('Page_TestDrive_Model_Overview/close_cookie_layer'))
+WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
 
 WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/img_tdb-vehicle-model-tile-img'))
 
-WebUI.click(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_fueltype'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_fueltype'))
 
 WebUI.click(findTestObject('Page_Daimler - Probefahrt - Mercede/li_Hybrid'))
 

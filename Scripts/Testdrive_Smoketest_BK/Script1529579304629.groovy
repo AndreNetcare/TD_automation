@@ -18,6 +18,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import java.util.Random as Random
+
+Random rand = new Random()
+
+int n
 
 WebUI.openBrowser('')
 
@@ -29,64 +34,120 @@ WebUI.waitForPageLoad(15)
 
 WebUI.delay(5)
 
-not_run: WebUI.click(findTestObject('Page_TestDrive_Model_Overview/close_cookie_layer'))
+'Deactivated because no cookie layer available'
+not_run: WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
 
-WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'))
 
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Footer_Links'))
 
-WebUI.switchToFrame(findTestObject('Page_TestDrive_Model_Overview/td_contentframe'), 15)
+'Switch to test drive iframe'
+WebUI.switchToFrame(findTestObject('Oneweb_Elements/td_contentframe'), 15)
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/step1_active'))
+'Step 1'
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step1_active'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/step2_inactive'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step2_inactive'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/step3_inactive'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step3_inactive'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/step4_inactive'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'))
 
-WebUI.scrollToElement(findTestObject('Page_TestDrive_Model_Overview/footer_co2'), 0)
+WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/footer_co2'), 0)
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/footer_co2'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/footer_co2'))
 
-WebUI.scrollToElement(findTestObject('Page_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_CLS_coupe'), 
+WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_CLS_coupe'), 
     0)
 
-WebUI.click(findTestObject('Page_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_CLS_coupe'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_CLS_coupe'))
 
-WebUI.click(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_fueltype'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_fueltype'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_transmission_disabled'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_transmission_disabled'))
 
-WebUI.click(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/dropdown_fueltype_select_byIndex_benzin'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_fueltype_select_byIndex', [('index') : 1]))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'), 
+WebUI.verifyElementNotPresent(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'), 
     0)
 
-WebUI.verifyElementNotPresent(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'), 
+WebUI.verifyElementNotPresent(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'), 
     0)
 
-WebUI.click(findTestObject('Page_TestDrive_Model_Overview/model_layer_objects/generic_next_step_button'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_next_step_button'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Dealer_Locator/step2_active'))
+'Step 2'
+WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/step2_active'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/step3_inactive'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step3_inactive'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Model_Overview/step4_inactive'))
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Dealer_Locator/dl-main_map'))
+WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-main_map'))
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Dealer_Locator/dl-searchform'))
+WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-searchform'))
 
-WebUI.setText(findTestObject('Page_TestDrive_Dealer_Locator/dl-form_postcode'), '23554')
+WebUI.setText(findTestObject('Step2_TestDrive_Dealer_Locator/dl-form_postcode'), '23554')
 
-WebUI.click(findTestObject('Page_TestDrive_Dealer_Locator/dl-form_submit'))
+WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-form_submit'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementVisible(findTestObject('Page_TestDrive_Dealer_Locator/dl-resultspanel'))
+WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-resultspanel'))
 
-WebUI.click(findTestObject('Page_TestDrive_Dealer_Locator/dl-generic_select_first_dealer_result'))
+WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-generic_select_first_dealer_result'))
+
+'Step 3'
+WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/step3_active'))
+
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'))
+
+n = (rand.nextInt(21) + 1)
+
+WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_available_byIndex', [('index') : n]), 
+    0)
+
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_available_byIndex', [('index') : n]))
+
+String date = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_available_byIndex', [('index') : n]))
+
+WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_selected')).equals(date)
+
+WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/best_match'))
+
+WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]), 0)
+
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
+
+n = (rand.nextInt(21) + 1)
+
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
+
+String time = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
+
+WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_selected')).equals(time)
+
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/main_contact_form/salutation', [('salut') : 'MS']))
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/firstname'), 'netcare')
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/lastname'), 'tester')
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/street'), 'Lichtaecker 1')
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/city'), 'Neustetten')
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/postcode'), '72049')
+
+WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/continue_button_disabled'))
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/email'), 'karim.ayed@netcare.de')
+
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/phone'), '012345678')
+
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/continue_button_enabled', [('index') : n]))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/step4_active'))
 
