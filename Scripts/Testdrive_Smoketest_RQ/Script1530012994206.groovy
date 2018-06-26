@@ -115,6 +115,10 @@ String date = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_
 
 WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_selected')).equals(date)
 
+n = (rand.nextInt(21) + 1)
+
+WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]), 0)
+
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
 
 String time = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
