@@ -34,6 +34,7 @@ WebUI.waitForPageLoad(15)
 
 WebUI.delay(5)
 
+'Deactivated because no cookie layer available'
 WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
 
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'))
