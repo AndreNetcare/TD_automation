@@ -23,8 +23,6 @@ import org.openqa.selenium.By as By
 import internal.GlobalVariable as GlobalVariable
 import java.util.Random as Random
 
-WebDriver driver = DriverFactory.getWebDriver()
-
 Random rand = new Random()
 
 int n
@@ -128,7 +126,7 @@ WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_vehicl
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
 
-k = (rand.nextInt(driver.findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 1)
+k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 1)
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 
