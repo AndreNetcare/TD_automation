@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_motor</description>
-   <name>dropdown_motor_select_byIndex</name>
+   <description></description>
+   <name>detailsTile</name>
    <tag></tag>
-   <elementGuidId>3cf2d630-4334-406a-adea-7af5a9258b33</elementGuidId>
+   <elementGuidId>64dee321-4709-4b4b-9c4b-ce5a2fe7c4a6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+      <value>//div[@class='tdb-details-tile']//ul[contains(@class,'contact-list')]</value>
    </webElementProperties>
 </WebElementEntity>

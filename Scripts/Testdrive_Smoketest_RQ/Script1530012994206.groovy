@@ -34,8 +34,7 @@ WebUI.waitForPageLoad(15)
 
 WebUI.delay(5)
 
-'Deactivated because no cookie layer available'
-not_run: WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
+WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
 
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'))
 
@@ -70,10 +69,17 @@ WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/model_
 
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_fueltype_select_byIndex', [('index') : 1]))
 
-WebUI.verifyElementNotPresent(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'), 
-    0)
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor'))
 
-WebUI.verifyElementNotPresent(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor_disabled'), 
+WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', 
+        [('index') : '1']))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', [('index') : 1]), 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_transmission'), 
     0)
 
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_next_step_button'))
@@ -135,11 +141,11 @@ WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/stre
 
 WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/city'), 'Neustetten')
 
-WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/postcode'), '72049')
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/postcode'), '72149')
 
 WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/continue_button_disabled'))
 
-WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/email'), 'karim.ayed@netcare.de')
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/email'), 'jens.gogolek@netcare.de')
 
 WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/phone'), '012345678')
 
@@ -147,5 +153,41 @@ WebUI.click(findTestObject('Step3_TestDrive_select_Date/continue_button_enabled'
 
 WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/step4_active'))
 
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/vehicleCard'))
+
 WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/vehicleCard_legal_Information'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/dealerTile'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/detailsTile'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
+
+WebUI.waitForPageLoad(5)
+
+WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard'))
+
+WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard_legal_Information'))
+
+WebUI.verifyElementVisible(findTestObject('Summary/dealerTile'))
+
+WebUI.verifyElementVisible(findTestObject('Summary/detailsTile'))
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/firstname'), 'netcare')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/lastname'), 'tester')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/street'), 'Lichtaecker 1')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/postcode'), '72149')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/city'), 'Neustetten')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'jens.gogolek@netcare.de')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 12345678')
 

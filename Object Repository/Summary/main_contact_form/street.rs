@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_motor</description>
-   <name>dropdown_motor_select_byIndex</name>
+   <description></description>
+   <name>street</name>
    <tag></tag>
-   <elementGuidId>3cf2d630-4334-406a-adea-7af5a9258b33</elementGuidId>
+   <elementGuidId>dca63a1c-f9e1-4455-b1f6-835d8ae7612c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+         <value>//div[@class='tdb-details-tile']//span[contains(@data-ng-bind,'street')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+      <value>//div[@class='tdb-details-tile']//span[contains(@data-ng-bind,'street')]</value>
    </webElementProperties>
 </WebElementEntity>

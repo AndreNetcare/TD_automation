@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>generic_dropdown_motor</description>
-   <name>dropdown_motor_select_byIndex</name>
+   <description></description>
+   <name>step4_active</name>
    <tag></tag>
-   <elementGuidId>3cf2d630-4334-406a-adea-7af5a9258b33</elementGuidId>
+   <elementGuidId>90ed4613-894a-4586-8ad4-93a90170ce4c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+         <value>//li[contains(@class,'navigation-step-active')]/a[@data-ui-sref='summary']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+      <value>//li[contains(@class,'navigation-step-active')]/a[@data-ui-sref='summary']</value>
    </webElementProperties>
 </WebElementEntity>
