@@ -17,8 +17,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKey
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.By
 import internal.GlobalVariable as GlobalVariable
 import java.util.Random as Random
+
+//WebDriver driver = DriverFactory.getWebDriver()
 
 Random rand = new Random()
 
@@ -35,7 +40,7 @@ WebUI.waitForPageLoad(15)
 WebUI.delay(5)
 
 'Deactivated because no cookie layer available'
-not_run: WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
+WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
 
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'))
 
@@ -89,7 +94,7 @@ WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-mai
 
 WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-searchform'))
 
-WebUI.setText(findTestObject('Step2_TestDrive_Dealer_Locator/dl-form_postcode'), '23554')
+WebUI.setText(findTestObject('Step2_TestDrive_Dealer_Locator/dl-form_postcode'), '71034')
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-form_submit'))
 
@@ -123,9 +128,13 @@ WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_b
 
 n = (rand.nextInt(21) + 1)
 
-WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
+//int k = WebUI.getNumberOfTotalOption(findTestObject('null'));
+int k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath("(//div[@class='tdb-timepicker-cell'])")).size()) + 1)
 
-String time = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
+
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
+
+String time = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 
 WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_selected')).equals(time)
 
