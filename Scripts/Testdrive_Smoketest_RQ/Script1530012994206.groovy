@@ -189,5 +189,5 @@ WebUI.verifyElementText(findTestObject('Summary/main_contact_form/city'), 'Neust
 
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'jens.gogolek@netcare.de')
 
-WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 12345678')
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 123456789')
 
