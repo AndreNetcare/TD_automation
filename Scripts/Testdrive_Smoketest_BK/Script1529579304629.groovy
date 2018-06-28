@@ -17,17 +17,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKey
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
 import internal.GlobalVariable as GlobalVariable
 import java.util.Random as Random
 
-//WebDriver driver = DriverFactory.getWebDriver()
+WebDriver driver = DriverFactory.getWebDriver()
 
 Random rand = new Random()
 
 int n
+
+int k
 
 WebUI.openBrowser('')
 
@@ -126,11 +128,7 @@ WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_vehicl
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
 
-n = (rand.nextInt(21) + 1)
-
-//int k = WebUI.getNumberOfTotalOption(findTestObject('null'));
-int k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath("(//div[@class='tdb-timepicker-cell'])")).size()) + 1)
-
+k = (rand.nextInt(driver.findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 1)
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 
@@ -159,4 +157,28 @@ WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/phon
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/continue_button_enabled', [('index') : n]))
 
 WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/step4_active'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/vehicleCard'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/vehicleCard_legal_Information'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/dealerTile'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/detailsTile'))
+
+WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
+
+WebUI.waitForPageLoad(5)
+
+WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard'))
+
+WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard_legal_Information'))
+
+WebUI.verifyElementVisible(findTestObject('Summary/dealerTile'))
+
+WebUI.verifyElementVisible(findTestObject('Summary/detailsTile'))
 
