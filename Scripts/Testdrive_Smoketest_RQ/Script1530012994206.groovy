@@ -56,10 +56,10 @@ WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/footer_co2'
 
 WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/footer_co2'))
 
-WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_E_class_coupe'), 
+WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_C_class_t_model'), 
     0)
 
-WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_E_class_coupe'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_C_class_t_model'))
 
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_fueltype'))
 
@@ -122,6 +122,8 @@ String date = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_
 WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_selected')).equals(date)
 
 n = (rand.nextInt(21) + 1)
+
+WebUI.delay(2)
 
 WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]), 0)
 
@@ -189,5 +191,5 @@ WebUI.verifyElementText(findTestObject('Summary/main_contact_form/city'), 'Neust
 
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'jens.gogolek@netcare.de')
 
-WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 123456789')
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 12345678')
 
