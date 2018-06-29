@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Open point:
+-Click back to homepage button
+-Check confirmation email
+-Better variabilzation
+-mobile optimization</description>
    <name>Testdrive_Smoketest_RQ</name>
    <tag>smoketest</tag>
    <comment></comment>
