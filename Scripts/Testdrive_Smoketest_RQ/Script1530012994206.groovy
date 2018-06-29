@@ -17,12 +17,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKey
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
 import internal.GlobalVariable as GlobalVariable
 import java.util.Random as Random
 
 Random rand = new Random()
 
 int n
+
+int k
 
 WebUI.openBrowser('')
 
@@ -35,6 +40,10 @@ WebUI.waitForPageLoad(15)
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
+
+WebUI.refresh()
+
+WebUI.delay(5)
 
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'))
 
@@ -121,15 +130,14 @@ String date = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_
 
 WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_selected')).equals(date)
 
-n = (rand.nextInt(21) + 1)
+k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 
+1)
 
 WebUI.delay(2)
 
-WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]), 0)
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 
-WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
-
-String time = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : n]))
+String time = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 
 WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_selected')).equals(time)
 
@@ -192,4 +200,6 @@ WebUI.verifyElementText(findTestObject('Summary/main_contact_form/city'), 'Neust
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'jens.gogolek@netcare.de')
 
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 12345678')
+
+WebUI.closeBrowser()
 

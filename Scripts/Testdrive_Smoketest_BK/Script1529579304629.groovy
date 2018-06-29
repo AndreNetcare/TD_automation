@@ -42,6 +42,10 @@ WebUI.delay(5)
 'Deactivated because no cookie layer available'
 WebUI.click(findTestObject('Oneweb_Elements/close_cookie_layer'))
 
+WebUI.refresh()
+
+WebUI.delay(5)
+
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Header_MB_logo'))
 
 WebUI.verifyElementVisible(findTestObject('Oneweb_Elements/Footer_Links'))
@@ -180,4 +184,20 @@ WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard_legal_Information
 WebUI.verifyElementVisible(findTestObject('Summary/dealerTile'))
 
 WebUI.verifyElementVisible(findTestObject('Summary/detailsTile'))
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/firstname'), 'netcare')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/lastname'), 'tester')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/street'), 'Lichtaecker 1')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/postcode'), '72049')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/city'), 'Neustetten')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'karim.ayed@netcare.de')
+
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 12345678')
+
+WebUI.closeBrowser()
 
