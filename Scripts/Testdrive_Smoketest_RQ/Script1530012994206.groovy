@@ -83,7 +83,7 @@ WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/g
 WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', 
         [('index') : '1']))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', [('index') : 1]), 
     FailureHandling.STOP_ON_FAILURE)
@@ -133,7 +133,7 @@ WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_s
 k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 
 1)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 
@@ -151,11 +151,11 @@ WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/stre
 
 WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/city'), 'Neustetten')
 
-WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/postcode'), '72149')
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/postcode'), '72049')
 
 WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/continue_button_disabled'))
 
-WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/email'), 'jens.gogolek@netcare.de')
+WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/email'), 'karim.ayed@netcare.de')
 
 WebUI.setText(findTestObject('Step3_TestDrive_select_Date/main_contact_form/phone'), '012345678')
 
@@ -173,7 +173,7 @@ WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/detailsTile')
 
 WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
 
@@ -193,11 +193,11 @@ WebUI.verifyElementText(findTestObject('Summary/main_contact_form/lastname'), 't
 
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/street'), 'Lichtaecker 1')
 
-WebUI.verifyElementText(findTestObject('Summary/main_contact_form/postcode'), '72149')
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/postcode'), '72049')
 
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/city'), 'Neustetten')
 
-WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'jens.gogolek@netcare.de')
+WebUI.verifyElementText(findTestObject('Summary/main_contact_form/email'), 'karim.ayed@netcare.de')
 
 WebUI.verifyElementText(findTestObject('Summary/main_contact_form/phone'), '+49 12345678')
 
