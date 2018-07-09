@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//tdb-dropdown-box[contains(@selected-option,'transmission')]/ul/li)[1]</value>
+         <value>(//tdb-dropdown-box[contains(@selected-option,'transmission')]//ul/li)[${index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//tdb-dropdown-box[contains(@selected-option,'transmission')]/ul/li)[1]</value>
+      <value>(//tdb-dropdown-box[contains(@selected-option,'transmission')]//ul/li)[${index}]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+         <value>(//tdb-dropdown-box[contains(@selected-option,'motorisation')]//ul/li)[${index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//ul[contains(@class,'list') and contains(@class,'open')]//span[not(contains(text(),'4MATIC'))])[${index}]</value>
+      <value>(//tdb-dropdown-box[contains(@selected-option,'motorisation')]//ul/li)[${index}]</value>
    </webElementProperties>
 </WebElementEntity>

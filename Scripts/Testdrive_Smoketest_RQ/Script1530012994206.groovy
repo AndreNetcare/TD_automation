@@ -81,15 +81,21 @@ WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/d
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_motor'))
 
 WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', 
-        [('index') : '1']))
+        [('index') : 2]))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', [('index') : 1]), 
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_motor_select_byIndex', [('index') : 2]), 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_transmission'), 
     0)
+
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_transmission'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/dropdown_transmission_select_byIndex', [('index') : 1]))
 
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_next_step_button'))
 
@@ -114,10 +120,12 @@ WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-res
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-generic_select_first_dealer_result'))
 
-'Step 3'
-WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/step3_active'))
+WebUI.delay(5)
 
-WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'))
+'Step 3'
+WebUI.verifyElementVisibleInViewport(findTestObject('Step3_TestDrive_select_Date/step3_active'), 0)
+
+WebUI.verifyElementVisibleInViewport(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'), 0)
 
 n = (rand.nextInt(21) + 1)
 

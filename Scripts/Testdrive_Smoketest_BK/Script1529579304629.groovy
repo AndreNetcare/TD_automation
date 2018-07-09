@@ -108,10 +108,12 @@ WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-res
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-generic_select_first_dealer_result'))
 
-'Step 3'
-WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/step3_active'))
+WebUI.delay(5)
 
-WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'))
+'Step 3'
+WebUI.verifyElementVisibleInViewport(findTestObject('Step3_TestDrive_select_Date/step3_active'), 0)
+
+WebUI.verifyElementVisibleInViewport(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'), 0)
 
 n = (rand.nextInt(21) + 1)
 
