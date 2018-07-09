@@ -132,6 +132,8 @@ WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_vehicl
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
 
+WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_selected_byIndex', [('index') : 1]))
+
 k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 
 1)
 

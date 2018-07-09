@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>generic_vehicle_selected</name>
+   <name>generic_vehicle_selected_byIndex</name>
    <tag></tag>
    <elementGuidId>477a8465-2949-4c49-ba08-45d8326cfc79</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>(//div[contains(@class,'vehicle-carousel')]//button/div[@class='tdb-already-selected'])[${index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(@class,'vehicle-card-outer is-selected')]</value>
+      <value>(//div[contains(@class,'vehicle-carousel')]//button/div[@class='tdb-already-selected'])[${index}]</value>
    </webElementProperties>
 </WebElementEntity>
