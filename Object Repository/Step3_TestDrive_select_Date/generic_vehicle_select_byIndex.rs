@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>(//div[contains(@class,'vehicle-carousel')]//button/div[@class='tdb-can-be-selected'])[${index}]
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[contains(@class,'vehicle-carousel')]//button)[${index}]</value>
+      <value>(//div[contains(@class,'vehicle-carousel')]//button/div[@class='tdb-can-be-selected'])[${index}]
+</value>
    </webElementProperties>
 </WebElementEntity>

@@ -108,14 +108,14 @@ WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-res
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-generic_select_first_dealer_result'))
 
-WebUI.delay(5)
+WebUI.delay(10)
 
 'Step 3'
 WebUI.verifyElementVisibleInViewport(findTestObject('Step3_TestDrive_select_Date/step3_active'), 0)
 
 WebUI.verifyElementVisibleInViewport(findTestObject('Step1_TestDrive_Model_Overview/step4_inactive'), 0)
 
-n = (rand.nextInt(21) + 1)
+n = (rand.nextInt(20) + 1)
 
 WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_available_byIndex', [('index') : n]), 
     0)
@@ -130,12 +130,19 @@ WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/best_matc
 
 WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]), 0)
 
+WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]), FailureHandling.STOP_ON_FAILURE)
+
+try{
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
+}catch(Exception e){}
 
 WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_selected_byIndex', [('index') : 1]))
 
-k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 
-1)
+WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : 1]))
+
+String timepicker_cell_xpath = '(//div[@class=\'tdb-timepicker-cell\'])'
+
+k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath(timepicker_cell_xpath)).size()) + 1)
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : k]))
 

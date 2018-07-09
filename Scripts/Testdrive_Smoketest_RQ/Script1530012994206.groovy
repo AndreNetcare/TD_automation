@@ -120,7 +120,7 @@ WebUI.verifyElementVisible(findTestObject('Step2_TestDrive_Dealer_Locator/dl-res
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-generic_select_first_dealer_result'))
 
-WebUI.delay(5)
+WebUI.delay(10)
 
 'Step 3'
 WebUI.verifyElementVisibleInViewport(findTestObject('Step3_TestDrive_select_Date/step3_active'), 0)
