@@ -138,8 +138,11 @@ String date = WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_
 
 WebUI.getText(findTestObject('Step3_TestDrive_select_Date/generic_calendar_day_selected')).equals(date)
 
-k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath('(//div[@class=\'tdb-timepicker-cell\'])')).size()) + 
-1)
+WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/generic_timepicker_cell_byIndex', [('index') : 1]))
+
+String timepicker_cell_xpath = '(//div[@class=\'tdb-timepicker-cell\'])'
+
+k = (rand.nextInt(DriverFactory.getWebDriver().findElements(By.xpath(timepicker_cell_xpath)).size()) + 1)
 
 WebUI.delay(5)
 
@@ -184,6 +187,8 @@ WebUI.verifyElementVisible(findTestObject('Step4_TestDrive_Summary/confirm_TestD
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
+
+WebUI.delay(5)
 
 WebUI.waitForPageLoad(5)
 

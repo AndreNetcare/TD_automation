@@ -191,6 +191,8 @@ WebUI.click(findTestObject('Step4_TestDrive_Summary/confirm_TestDrive_button'))
 
 WebUI.waitForPageLoad(5)
 
+WebUI.delay(5)
+
 WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard'))
 
 WebUI.verifyElementVisible(findTestObject('Summary/vehicleCard_legal_Information'))
