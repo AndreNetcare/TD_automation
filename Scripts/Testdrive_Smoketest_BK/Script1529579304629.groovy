@@ -132,9 +132,12 @@ WebUI.scrollToElement(findTestObject('Step3_TestDrive_select_Date/generic_vehicl
 
 WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]), FailureHandling.STOP_ON_FAILURE)
 
-try{
-WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
-}catch(Exception e){}
+'needs to be refined'
+try {
+    WebUI.click(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_select_byIndex', [('index') : 1]))
+}
+catch (Exception e) {
+} 
 
 WebUI.verifyElementVisible(findTestObject('Step3_TestDrive_select_Date/generic_vehicle_selected_byIndex', [('index') : 1]))
 
