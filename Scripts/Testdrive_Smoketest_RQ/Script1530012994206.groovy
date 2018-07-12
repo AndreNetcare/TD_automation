@@ -65,10 +65,10 @@ WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/footer_co2'
 
 WebUI.verifyElementVisible(findTestObject('Step1_TestDrive_Model_Overview/footer_co2'))
 
-WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_C_class_t_model'), 
+WebUI.scrollToElement(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_E_class'), 
     0)
 
-WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_C_class_t_model'))
+WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/modelsObjects_for_Model_Overview/modelOverview_E_class'))
 
 WebUI.click(findTestObject('Step1_TestDrive_Model_Overview/model_layer_objects/generic_dropdown_fueltype'))
 

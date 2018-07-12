@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>CINTDS-2298_Step0_OneWeb_Component_Header_and_Footer</description>
-   <name>CINTDS-2298_Step0_OneWeb_Component_Header_and_Footer</name>
-   <tag>RegressionTest</tag>
-   <comment></comment>
-   <testCaseGuid>e17440d5-422f-49d1-b3d4-7ff610fd4ae7</testCaseGuid>
-</TestCaseEntity>
