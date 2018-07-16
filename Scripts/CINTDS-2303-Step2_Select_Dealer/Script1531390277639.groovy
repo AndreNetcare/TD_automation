@@ -19,9 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyNotMatch('', '', false)
+scale_default = WebUI.getText(findTestObject('Step2_TestDrive_Dealer_Locator/dl-scale_text'))
+
+scale_default.replaceAll(' km', '')
+
+int scale_default_number = Integer.parseInt(scale_default)
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-map_zoom_in'))
 
-WebUI.acceptAlert()
+scale_zoom_in = WebUI.getText(findTestObject('Step2_TestDrive_Dealer_Locator/dl-scale_text'))
+
+scale_zoom_in.replaceAll(' km', '')
+
+int scale_zoom_in_number = Integer.parseInt(scale_zoom_in)
+
+if (scale_zoom_in_number < scale_default_number) {
+    throw new com.kms.katalon.core.exception.StepFailedException()
+}
+
+WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-map_zoom_out'))
 
