@@ -33,9 +33,18 @@ scale_zoom_in.replaceAll(' km', '')
 
 int scale_zoom_in_number = Integer.parseInt(scale_zoom_in)
 
-if (scale_zoom_in_number < scale_default_number) {
+if (scale_zoom_in_number > scale_default_number) {
     throw new com.kms.katalon.core.exception.StepFailedException()
 }
 
 WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-map_zoom_out'))
 
+scale_zoom_out = WebUI.getText(findTestObject('Step2_TestDrive_Dealer_Locator/dl-scale_text'))
+
+scale_zoom_out.replaceAll(' km', '')
+
+int scale_zoom_out_number = Integer.parseInt(scale_zoom_in)
+
+if (scale_zoom_out_number < scale_zoom_in_number) {
+	throw new com.kms.katalon.core.exception.StepFailedException() 
+	}
