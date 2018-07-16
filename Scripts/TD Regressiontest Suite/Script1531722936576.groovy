@@ -19,9 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyNotMatch('', '', false)
-
-WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-map_zoom_in'))
-
-WebUI.acceptAlert()
-

@@ -19,9 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyNotMatch('', '', false)
+WebUI.callTestCase(findTestCase('Testdrive_Smoketest_RQ'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Step2_TestDrive_Dealer_Locator/dl-map_zoom_in'))
-
-WebUI.acceptAlert()
+WebUI.callTestCase(findTestCase('Testdrive_Smoketest_BK'), [:], FailureHandling.STOP_ON_FAILURE)
 
